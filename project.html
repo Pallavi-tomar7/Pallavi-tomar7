@@ -1,0 +1,970 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+                *{
+                    font-family: Arial;
+                    font-size: 17px;
+                    scroll-behavior: smooth;
+                    
+                    
+                }
+                body{
+                        margin: 0;
+                        cursor: url("custom.gif"), url("custom.cur"), default;
+                        
+                }
+
+                
+                .container-fluid{
+                    background-color: palevioletred;
+                    
+                    
+                }
+                .l1{
+                    color:cyan;
+                }
+                .l2{
+                    color:cyan;
+                }
+                .logo_text_decoration{
+                    text-transform: uppercase;
+                    font-size: 25px;
+                    font-weight: bold;
+                    
+                    
+                }
+                .nav-link{
+                    color:white;
+                  
+                }
+                a{
+                    display: block;
+                    font-size: 17px;
+                    font-weight: bold;
+                }
+                a:hover{
+                    color:white;
+                    border-bottom: 4px solid red;
+                }
+                .active1{
+                    border-bottom: 4px solid red;
+                }
+
+             
+
+                video{
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    bottom: 50%;
+                    left: 0;
+                    width: 100vmax; 
+                    
+                }
+                .content{
+                    position: relative;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    color: #f1f1f1;
+                    width: 100%;
+                    padding: 4px;
+                    
+                    
+                    
+                }
+
+                #myBtn {
+                width: 200px;
+                font-size: 18px;
+                padding: 10px;
+                border: none;
+                background: #000;
+                color: #fff;
+                cursor: pointer;
+                }
+
+
+                #myBtn:hover {
+                background: #ddd;
+                color: black;
+                }
+                h2{
+                 color:red;
+                }
+             h1{
+                 color: white;
+                 font-size:40px;
+             }
+             h1,h2{
+                 position: relative;
+                 top: 35%;
+                 font-weight: bold;
+             }
+             .heading{
+                 font-size: 20px;
+                 font-weight: bold;
+                 padding-bottom: 20px;
+                 border-bottom: 1px solid lightgray;
+             }
+             .sub-section img{
+                 width: 100%;
+                 height: 200px;
+             }
+             .tag{
+                 padding:10px;
+                 font-size: 20px;
+             }
+             .sub-section p{
+                 clear: both;
+                 padding: 10px;
+             }
+             .checked{
+                 color: orangered;
+             }
+            .tag-line{
+                border-bottom: 1px solid lightgray;
+            }
+            .aboutus ul{
+                margin: 0;
+                padding: 15px;
+            }
+            .aboutus ul li{
+                line-height: 30px;
+            }
+            #read-more:hover{
+                background-color: black;
+            }
+            .button-position{     
+                 text-align: end;
+            }
+            
+            .menu{
+                justify-content: end;
+            }
+            .form-control{
+              width: 30%;
+              background-color: lightgrey;
+            }
+            .signup{
+              background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(d:/css/bkbook.jpg);
+              background-repeat: no-repeat;
+              height:150vh;
+              width: 100%;
+              background-size: cover;
+              box-sizing: border-box;
+              color:greenyellow;
+             
+            }
+            small{
+              color:red;
+            }
+            
+
+            .banner{
+                 background: url('d:/css/hm.jpg') no-repeat 0 0;
+                 background-size: cover;
+                 height: 100vh;
+                 
+                 
+            }
+            
+            .carousel-inner{
+                max-height: 300px;
+
+              
+            }
+            .carousel-indicators li{
+                border-radius:50%;
+            }
+            .carousel-slide{
+              margin-top: 600px
+            }
+            
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid white;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+
+            input[type=submit] {
+              background-color: #04AA6D;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+
+/* Style the container/contact section */
+            .container {
+              border-radius: 5px;
+              padding: 10px;
+              position: relative;
+              margin-bottom: 0%;
+              
+            }
+           
+
+            
+            .contact{
+              margin-top: 100px;
+            }
+
+            /* Create two columns that float next to eachother */
+            .column {
+              float: left;
+              width: 50%;
+              margin-top: 6px;
+              padding: 20px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            input[type=text] {
+              padding: 4px;
+              margin-top: 8px;
+              font-size: 17px;
+              border: none;
+            }
+              .image {
+                  display: block;
+                  width: 100%;
+                  height: 200px;
+              }
+
+              .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 100%;
+                right: 0;
+                background-color: #008CBA;
+                overflow: hidden;
+                width: 0;
+                height: 100%;
+                transition: .5s ease;
+              }
+
+              .container:hover .overlay {
+                width: 100%;
+                left: 0;
+              }
+
+              .text {
+                color: white;
+                font-size: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+              }
+              .back{
+                margin-right: 300px;
+                width:100px;
+                color: black;
+                margin-bottom: 200px;
+              }
+             
+              
+  
+              
+            
+
+           
+            
+            
+            @media screen and (max-width: 1200px){
+              .menu{
+                  justify-content: end;
+              }
+              video{
+                max-width: 100%;
+                height: auto;
+              }
+              
+            }
+            @media screen and (max-width: 992px){
+                .logo{
+                    text-align: center;
+                }
+                .menu{
+                  justify-content: space-around;
+                }
+                video {
+                    max-width: 100%;
+                    height: auto;
+                }
+                
+                .column, input[type=submit] {
+                  width: 100%;
+                  margin-top: 0;
+                }
+                .container {
+                  border-radius: 5px;
+                  padding: 10px;
+                  width:100%;
+                  
+
+                  
+                }
+                
+               
+            }
+            @media screen and (max-width: 600px){
+              .logo{
+                    text-align: center;
+                }
+                .menu{
+                  justify-content: space-around;
+                }
+                video {
+                    max-width: 100%;
+                    height: auto;
+                }
+                
+                .column, input[type=submit] {
+                  width: 100%;
+                  margin-top: 0;
+                }
+                .container {
+                  border-radius: 5px;
+                  padding: 10px;
+                  width:100%;
+                  
+
+                  
+                }
+
+
+            }
+
+        </style>
+  <script>
+      new kursor({
+            type: 1
+        })
+      function validateUserName(){
+         var status = true;
+         var usernameInpoutObject =document.getElementById("username");
+
+         var username = document.getElementById("username").value;
+         var usernameError = document.getElementById("usernameError");
+         if(username.length == 0){
+           usernameError.innerHTML = "Username required";
+           status = false;
+           usernameInpoutObject.classList.add("border","border-danger");
+         }
+         else{
+           usernameError.innerHTML = "";
+           usernameInpoutObject.classList.remove("border-danger");
+           usernameInpoutObject.classList.add("border-success");
+         }
+         return status;
+      }
+      function validatePassword(){
+          var status = true;
+          /*
+          1) Is Empty condition
+          2) 6-10 letter
+        */
+          var passwordObject = document.getElementById("password");
+          var password = passwordObject.value;
+          
+          var passwordError = document.getElementById("passwordError");
+          
+          // at least 8 letter
+          // at least one uppercase
+          // at least one lower case
+          // at one special symbol
+          var regEx = "^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$";
+
+          var result = password.match(regEx);
+          if(result == null){
+              passwordError.innerHTML = "Password must containt at lest 8 letter 1 uppercase 1 lowercase and 1 special charachter";
+              status = false;
+              passwordObject.classList.add("border","border-danger");
+          }
+          else{
+              passwordError.innerHTML = "";
+              passwordObject.classList.remove("border-danger");
+              passwordObject.classList.add("border-success");
+          }
+            /*
+        if(password.length == 0){
+            status = false;
+            passwordError.innerHTML = "Password required";
+        }
+        else if(password.length<6 || password.length>10){
+            status = false;
+            passwordError.innerHTML = "Password should be 6 to 10 letter long";
+        }
+        else
+          passwordError.innerHTML = "";
+        */
+          return status;
+
+      }
+
+      function validateMobileNumber(){
+         var status = true;
+          /*
+            1) Empty condition
+            2) length should be 10
+            3) only digit allowed
+          */
+         var mobileObject = document.getElementById("mobile");
+         var mobileNumber  = mobileObject.value;
+         var mobileError = document.getElementById("mobileError");
+         
+         if(mobileNumber.length == 0){
+             status = false;
+             mobileError.innerHTML = "Mobile number required";
+         }
+         else if(mobileNumber.length !=10){
+             status = false;
+             mobileError.innerHTML = "Mobile must containt 10 digit";
+         }
+         else if(isNaN(mobileNumber)){
+             status = false;
+             mobileError.innerHTML = "Only digit allowed";
+         }
+         else
+           mobileError.innerHTML = "";
+         
+         if(status == false){
+            mobileObject.classList.add("border","border-danger");
+         }
+         else{
+            mobileObject.classList.remove("border-danger");
+            mobileObject.classList.add("border-success");
+         }   
+         return status;
+      }
+      function validateConfirmPassword(){
+          var status = true;
+          var confirmPasswordObject = document.getElementById("confirmPassword");
+
+          var password = document.getElementById("password").value;
+          var confirmPassword = confirmPasswordObject.value;
+          var confirmPasswordError = document.getElementById("confirmPasswordError");
+          
+          if(password != confirmPassword){
+             
+             confirmPasswordError.innerHTML = "Password not matched.";
+             status = false;
+             confirmPasswordObject.classList.add("border","border-danger");
+          }
+          else{
+           confirmPasswordError.innerHTML = "";
+           confirmPasswordObject.classList.remove("border-danger");
+           confirmPasswordObject.classList.add("border-success");
+          }
+          if(confirmPassword == "")
+            confirmPasswordObject.classList.remove("border-success");
+          return status;
+      }
+
+      function validateCity(){
+        var status = true;
+        var city = document.getElementById("city").value;
+        var cityError = document.getElementById("cityError");
+        if(city == "0"){
+          cityError.innerHTML="Please select city";
+          status = false;
+        }
+        else{
+          cityError.innerHTML = "";
+        }
+        return status;
+      }
+      function validateSkillSet(){
+        var status = true;
+        var skillSetObject = document.getElementById("skillSet");
+        var skillSetError = document.getElementById("skillSetError");
+        
+        var optionArray = skillSetObject.getElementsByTagName("option");
+        var selectedSkillSet = [];
+        //selectedSkillSet.push(100);
+        for(var i = optionArray.length;i--;){
+            if(optionArray[i].selected){
+               selectedSkillSet.push(optionArray[i].value);
+            }   
+        }
+        if(selectedSkillSet.length < 2){
+          skillSetError.innerHTML = "please select at least 2 skill";
+          status = false;
+        }
+        else{
+          skillSetError.innerHTML = "";
+        }
+
+        return status;
+      }
+    
+      function validateHobbies(){
+        var status = true;
+        var hockey = document.getElementById("chkHocky").checked;
+        var footboll = document.getElementById("chkFootboll").checked;
+        var cricket = document.getElementById("chkCricket").checked;
+        var hobbiesError=  document.getElementById("hobbiesError");
+        if(hockey == false && footboll == false && cricket == false){
+          status = false;
+          hobbiesError.innerHTML="please select at least one hobby";
+        }
+        else{
+          hobbiesError.innerHTML = "";
+        }
+        return status;
+      }
+      function validateData(){
+          var status = true;
+          var usernameStatus = validateUserName();
+          if(usernameStatus == false)
+           status = false;
+
+          var passwordStatus = validatePassword();    
+          if(passwordStatus == false)
+            status = false;
+
+          var mobileStatus = validateMobileNumber();
+          if(mobileStatus == false)
+           status = false;
+         
+          var confirmPasswordStatus = validateConfirmPassword();
+          if(confirmPasswordStatus == false)
+            status = false;
+
+          var cityStatus = validateCity();
+          if(cityStatus == false)
+            status = false;
+
+          var skillSetStatus = validateSkillSet();
+          if(skillSetStatus == false)
+            status = false;  
+          
+         
+
+          var hoobiesStatus = validateHobbies();
+          if(hoobiesStatus == false)
+            status = false;  
+          if(status)
+           alert("Registration Success");
+            
+
+          return status;
+      }
+     
+           
+
+        </script>
+    </head>
+    <body>
+      
+      
+
+      
+        <div class="container-fluid" id="main">
+            <div class="container">
+            <div class="row">
+              
+              
+                <div class="col-lg-4 col-md-12 py-3 logo">
+                    <label class="l1 logo_text_decoration">Royal </label>
+                    <label class="l2 logo_text_decoration">Bookstore<label>
+                </div>
+                
+                      
+                         
+                           
+                        
+                  
+              
+
+                <nav class="col-lg-8 col-md-12 nav pt-3 menu">
+                    <a href="#back" class="nav-link active1">Home</a>
+                    <a href="#book" class="nav-link">Our Books</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                    <a href="#" data-toggle="modal" data-target="#loginmodal" class="nav-link">Login</a>
+                    <a href="#Registration" class="nav-link">Signup ?</a>
+                    
+                   
+                   
+                    
+                </nav>
+               
+                
+            </div>
+     </div>
+     </div>
+            
+          
+    
+        
+                <div class="video">
+                    <video  autoplay muted>
+                    <source src="library.mp4" type="video/mp4">
+                    </video>
+                    
+                   
+                    <div class="content">
+                        <h1>Books are a uniquely portable magic.</h1>
+                        <p>We have our eye on the same destination –<br>
+                           a sustainable future where Indigenous people are recognised for their wisdom <br>
+                           and honoured for their culture – there is no problem taking a different path to reach that place..<br>
+                         </p>
+                        <button id="myBtn" >Learn More</button>
+                    </div>
+                    <div class="container">
+                      <img src="d:/css/dam.jpg" alt="hm" class="image">
+                      <div class="overlay">
+                        <div class="text">Royal Bookstore</div>
+                      </div>
+                    </div>
+               </div>
+         <div class="container">
+            <div class="row mt-5 heading">
+                <div class="col-md-2 text-left">Latest Books</div>
+                <div class="col-md-10 text-right text-danger">View all Books></div>
+            </div>
+        </div>
+        <div class="container" id="book">
+            <div class="row section mt-5">
+                <div class="col-md-4 sub-section">
+                  <img src="d:/css/it.jpg"/>
+                  <div class="pl-3 pr-3 border pb-3"> 
+                    <span class="float-left font-weight-bold text-primary tag">Technology</span>
+                    <span class="float-right font-weight-bold tag">$25.75</span>
+                    <p>Take a good book to bed with you!</p> 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="p-0 float-right text-danger">Review(48)</span>
+                  </div>
+               </div>
+               <div class="col-md-4 sub-section">
+                   <img src="d:/css/sleep.jpg"/>
+                   <div class="pl-3 pr-3 border pb-3"> 
+                     <span class="float-left font-weight-bold text-primary tag">Title goes here</span>
+                     <span class="float-right font-weight-bold tag">$25.75</span>
+                     <p>Take a good book to bed with you!</p> 
+                     <span class="fa fa-star checked" style="padding-left:10px;"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="p-0 float-right text-danger" style="padding:10px">Review(48)</span>
+                   </div>
+                </div>
+                <div class="col-md-4 sub-section">
+                   <img src="d:/css/bengal.jpg"/>
+                   <div class="pl-3 pr-3 border pb-3"> 
+                     <span class="float-left font-weight-bold text-primary tag">Title goes here</span>
+                     <span class="float-right font-weight-bold tag">$25.75</span>
+                     <p>Take a good book to bed with you!</p> 
+                     <span class="fa fa-star checked" style="padding-left:10px;"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                     <span class="p-0 float-right text-danger" style="padding:10px">Review(48)</span>
+                   </div>
+                </div>
+            </div>
+            <div class="row section mt-5">
+               <div class="col-md-4 sub-section">
+                 <img src="d:/css/never.jpg"/>
+                 <div class="pl-3 pr-3 border pb-3"> 
+                   <span class="float-left font-weight-bold text-primary tag">Title goes here</span>
+                   <span class="float-right font-weight-bold tag">$25.75</span>
+                   <p>Take a good book to bed with you!</p> 
+                   <span class="fa fa-star checked" style="padding-left:10px;"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="fa fa-star checked"></span>
+                   <span class="p-0 float-right text-danger" style="padding:10px">Review(48)</span>
+                 </div>
+              </div>
+              <div class="col-md-4 sub-section">
+                  <img src="d:/css/shape.jpg"/>
+                  <div class="pl-3 pr-3 border pb-3"> 
+                    <span class="float-left font-weight-bold text-primary tag">Title goes here</span>
+                    <span class="float-right font-weight-bold tag">$25.75</span>
+                    <p>Take a good book to bed with you!</p> 
+                    <span class="fa fa-star checked" style="padding-left:10px;"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="p-0 float-right text-danger" style="padding:10px">Review(48)</span>
+                  </div>
+               </div>
+               <div class="col-md-4 sub-section">
+                  <img src="d:/css/bus.jpg"/>
+                  <div class="pl-3 pr-3 border pb-3"> 
+                    <span class="float-left font-weight-bold text-primary tag">Title goes here</span>
+                    <span class="float-right font-weight-bold tag">$25.75</span>
+                    <p>Take a good book to bed with you!</p> 
+                    <span class="fa fa-star checked" style="padding-left:10px;"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="p-0 float-right text-danger" style="padding:10px">Review(48)</span>
+                  </div>
+               </div>
+           </div>
+           <button type="submit" class="back"><a href="#main">Back</a></button>
+          
+        </div>
+        
+        <div class="container" id="about">
+            <div class="row mt-5 tag-line pb-3">
+                <div class="col">
+                    <h4>About Royal Books</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container border-bottom pb-5">
+            <div class="row">
+                <div class="col-md-6 pt-5 aboutus">
+                    <label class="text-primary">Looking for the best Books ?</label>
+                    <p>Many of us have special memories of the books that have inspired us,<br>
+                       and have learned the profound effect that reading the right book can have at the right moment.<br>
+                       If you’re short on time, reading some quotes about books is the next best thing.<br></p>
+                    <ul>
+                        <li>A room without books is like a body without a soul..</li>
+                        <li>Take a good book to bed with you—books do not snore.</li>
+                        <li>Outside of a dog, a book is a man's best friend.</li>
+                        <li>Where is human nature so weak as in the bookstore.</li>
+                        <li>Outside of a dog, a book is a man's best friend</li>
+                    </ul>
+                    <button id="read-more" class="btn btn-danger">Read More</button>
+                </div>
+                <div class="col-md-6 pt-5">
+                    <img src="d:/css/bkk.jpg"/>
+                </div>
+            </div>
+            <button type="submit" class="back"><a href="#main">Back</a></button>
+        </div>
+        
+        
+        <div class="modal fade" id="loginmodal">
+           <div class="modal-dialog modal-dialog-centered modal-sm">
+               <div class="modal-content">
+                   <div class="modal-header modal-title">
+                       <h3>Login here</h3>
+                   </div>
+                   <div class="modal-body">
+                       <form>
+                         <div class="form-group">
+                           <label>Username</label>
+                           <input type="text" class="form-control"/>
+                         </div> 
+                         <div class="form-group">
+                             <label>Password</label>
+                             <input type="password" class="form-control"/>
+                         </div>            
+                       </form>
+                   </div>
+                   <div class="modal-footer">
+                       <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                       <button class="btn btn-primary">Login</button>
+                   </div>
+               </div>
+           </div>
+        </div>
+       
+   </select>
+  </div>
+ </div>
+
+                                    <div class="signup" id="Registration">
+                                      <form>
+                                        <div class="form-group">
+                                            <label>Username</label>
+                                            <input onkeyup="validateUserName()" type="text" id="username" class="form-control"/>
+                                            <small id="usernameError"></small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Mobile number</label>
+                                          <input onkeyup="validateMobileNumber()" type="text" class="form-control" id="mobile"/>
+                                          <small id="mobileError"></small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input onkeyup = "validatePassword()" type="password" id="password" class="form-control"/>
+                                            <small id="passwordError"></small>
+                                            <span onclick="showPassword()">Show password</span>
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Confirm password</label>
+                                          <input type="password" onkeyup="validateConfirmPassword()" class="form-control" id="confirmPassword"/>
+                                          <small id="confirmPasswordError"></small>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                          <label>City</label>
+                                          <select onchange="validateCity()" id="city" class="form-control">
+                                            <option value="0">Select city</option>
+                                            <option value="1">Indore</option>
+                                            <option value="2">Bhopal</option>
+                                            <option value="3">Pune</option>
+                                            <option value="4">Chennai</option>
+                                          </select>
+                                          <small id="cityError"></small>
+                                        </div>     
+                                        
+                                        
+                                       
+                                        <div class="form-group">
+                                          <label>Select hobbies</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                           <input onchange="validateHobbies()" type="checkbox" class="form-check-input" id="chkHocky"/>
+                                            <label class="form-check-label">Learning</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input onchange="validateHobbies()" type="checkbox" class="form-check-input" id="chkCricket"/>
+                                           <label class="form-check-label">Painting</label>
+                                       </div>
+                                       <div class="form-check form-check-inline">
+                                        <input onchange="validateHobbies()" type="checkbox" class="form-check-input" id="chkFootboll"/>
+                                         <label class="form-check-label">Puzzle</label>
+                                         
+                                        </div>
+                                        <div>
+                                          <small id="hobbiesError"></small>
+                                        </div>
+                                         
+                                        <div class="form-group">
+                                          <label>Select your Technology skill</label>
+                                          <select onchange="validateSkillSet()" id="skillSet" multiple class="form-control">
+                                             <option value="0">select skill</option>
+                                             <option value="1">Java</option>
+                                             <option value="2">Android</option>
+                                             <option value="3">Angular</option>
+                                             <option value="4">Python</option>
+                                             <option value="5">Ruby</option>
+                                             <option value="6">Spring</option>
+                                             <option value="7">Spring-Boot</option>
+                                          </select>
+                                          <small id="skillSetError"></small>
+                                        </div>
+                                        <div class="form-group">
+                                          <button onclick="return validateData()" type="submit" class="btn btn-primary">Register</button>
+                                      </div>
+                                    </form>
+                                    <button type="submit" class="back"><a href="#main">Back</a></button>
+                                    </div>
+                                    <div class="col">
+                                      <div id="carouselblock" class="carousel slide" data-ride="carousel">
+                                          <ol class="carousel-indicators">
+                                              <li data-target="#carouselblock" data-slide-to="0" class="active"></li>
+                                              <li data-target="#carouselblock" data-slide-to="1"></li>
+                                              <li data-target="#carouselblock" data-slide-to="2"></li>
+                                          </ol>
+                                          <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <img src="d:/css/hm.jpg"/>
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img src="d:/css/ham.jpg"/>
+                                              </div>
+                                              <div class="carousel-item">
+                                                  <img src="d:/css/om.jpg"/>
+                                              </div>
+                                          </div>
+                                          <a href="#carouselblock" class="carousel-control-prev" data-slide="prev">
+                                              <span class="carousel-control-prev-icon"></span>
+                                          </a>
+                                          <a href="#carouselblock" class="carousel-control-next" data-slide="next">
+                                              <span class="carousel-control-next-icon"></span>
+                                          </a>
+                                      </div>
+                                  </div>
+                              </div>
+                           </div>
+                           <div class="container" id="contact">
+                            <div style="text-align:center">
+                              <h2>Contact Us</h2>
+                              <p>Swing by for a book Of Knowledge, or leave us a message:</p>
+                            </div>
+                            <div class="row">
+                              <div class="column">
+                                <img src="d:/css/r.jpg" style="width:100%">
+                              </div>
+                              <div class="column">
+                                <form>
+                                  <label for="fname">First Name</label>
+                                  <input  type="text" id="fname" name="firstname" placeholder="Your name..">
+                                  <label for="lname">Last Name</label>
+                                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                  <label for="country">Country</label>
+                                  <select id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">India</option>
+                                    <option value="usa">USA</option>
+                                  </select>
+                                  <label for="subject">Subject</label>
+                                  <textarea  id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                                  <input  type="submit" value="Submit">
+                                </form>
+                              </div>
+                            </div>
+                            <button type="submit" class="back"><a href="#main">Back</a></button>
+                            </div>
+                          
+                           <div class="container mt-5 border-bottom pb-5">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="text-primary">Creatinve & Unique Royal Products</label>
+                                    <p>Outside of a dog, a book is a man's best friend!</p>
+                                 </div>
+                                <div class="col-md-4 offset-2 button-position">
+                                    <button class="btn btn-danger">Prurchase Now</button>
+                                </div>
+                            </div>
+                            <button type="submit" class="back"><a href="#main">Back</a></button>
+                        </div>
+                           <div class="container mt-5 pb-5" >
+                            <div class="row">
+                                <div class="col text-center">
+                              
+                                   Copyright © 2021 Royal Books Co., Ltd. - Design: TemplateMo
+                                </div>
+                            </div>
+                        </div>
+    </body>
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+        new kursor({
+            type: 1
+        })
+    </script>
+</html>
